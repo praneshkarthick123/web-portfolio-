@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Pranesh Karthick - AI Developer{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Hello, I'm <span class="highlight-text">Pranesh Karthick</span></h1>
+    <p>I'm a <span class="typing-text">AI Developer</span></p>
+    <p>Aspiring AI developer with a strong academic foundation in computer science and artificial intelligence. Passionate about leveraging data-driven solutions to solve real-world problems.</p>
+    <a href="{{ url_for('contact') }}" class="btn-primary">Get In Touch</a>
+</section>
+
+<section class="about-preview">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p>Motivated and detail-oriented aspiring AI developer with a strong academic foundation in computer science and artificial intelligence. Proficient in Python, MySQL, UI development, and AI model creation, with hands-on experience in building machine learning projects using TensorFlow and ResNet.</p>
+        <p>Currently pursuing a Master's in Artificial Intelligence at Queen Mary University of London.</p>
+        <a href="{{ url_for('about') }}" class="btn-primary" style="display: inline-block; margin-top: 1rem;">Learn More</a>
+    </div>
+</section>
+
+<section class="skills-preview">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>Python</h3>
+            <div class="progress-container">
+                <div class="progress-bar" data-percentage="90"></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3>AI Model Creation</h3>
+            <div class="progress-container">
+                <div class="progress-bar" data-percentage="85"></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3>SQL Server Database</h3>
+            <div class="progress-container">
+                <div class="progress-bar" data-percentage="80"></div>
+            </div>
+        </div>
+    </div>
+    <a href="{{ url_for('skills') }}" class="btn-primary" style="display: inline-block;">View All Skills</a>
+</section>
+
+<section class="education-preview">
+    <h2 class="section-title">Education</h2>
+    <div class="card">
+        <h3 class="card-title">Master of Science in Artificial Intelligence</h3>
+        <h4>Queen Mary University of London</h4>
+        <p class="date">Sep 2024 - Sep 2025</p>
+        <p>Currently pursuing a Master's degree in Artificial Intelligence, focusing on deep learning, natural language processing, and computer vision.</p>
+    </div>
+    <a href="{{ url_for('education') }}" class="btn-primary" style="display: inline-block;">View Education History</a>
+</section>
+{% endblock %}
